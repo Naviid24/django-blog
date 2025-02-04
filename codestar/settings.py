@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-naviid24-djangoblog-f64pc346e7b.ws-eu117.gitpod.io',
+ALLOWED_HOSTS = [ '8000-naviid24-djangoblog-9ddkjgszxiw.ws-eu117.gitpod.io',
 '.herokuapp.com']
 
 
@@ -89,10 +89,14 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+
 CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net/",
-    "https://*.herokuapp.com"
+    "https://*.herokuapp.com",
+    "https://8000-naviid24-djangoblog-9ddkjgszxiw.ws-eu117.gitpod.io"
 ]
+
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
